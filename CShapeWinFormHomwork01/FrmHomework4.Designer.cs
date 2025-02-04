@@ -50,7 +50,10 @@
             this.lbShowTopic = new System.Windows.Forms.Label();
             this.lbTopic = new System.Windows.Forms.Label();
             this.lbResultHead = new System.Windows.Forms.Label();
-            this.btBack = new System.Windows.Forms.Button();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.bt1 = new System.Windows.Forms.Button();
+            this.bt3 = new System.Windows.Forms.Button();
+            this.bt4 = new System.Windows.Forms.Button();
             this.gbNote.SuspendLayout();
             this.gbResult.SuspendLayout();
             this.SuspendLayout();
@@ -124,6 +127,7 @@
             // 
             // tbAmountPeople
             // 
+            this.tbAmountPeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAmountPeople.Location = new System.Drawing.Point(167, 208);
             this.tbAmountPeople.Name = "tbAmountPeople";
             this.tbAmountPeople.Size = new System.Drawing.Size(134, 20);
@@ -145,7 +149,7 @@
             this.gbNote.Controls.Add(this.lbNote2);
             this.gbNote.Controls.Add(this.lbNote1);
             this.gbNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.gbNote.Location = new System.Drawing.Point(129, 249);
+            this.gbNote.Location = new System.Drawing.Point(135, 243);
             this.gbNote.Name = "gbNote";
             this.gbNote.Size = new System.Drawing.Size(200, 85);
             this.gbNote.TabIndex = 10;
@@ -173,6 +177,7 @@
             // btClose
             // 
             this.btClose.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btClose.Image = global::CShapeWinFormHomwork01.Properties.Resources.exit3;
             this.btClose.Location = new System.Drawing.Point(315, 340);
@@ -180,6 +185,7 @@
             this.btClose.Size = new System.Drawing.Size(82, 78);
             this.btClose.TabIndex = 13;
             this.btClose.Text = "ปิดหน้าจอ";
+            this.btClose.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btClose.UseVisualStyleBackColor = false;
             this.btClose.Click += new System.EventHandler(this.btClose_Click);
@@ -187,6 +193,7 @@
             // btCancel
             // 
             this.btCancel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btCancel.Image = global::CShapeWinFormHomwork01.Properties.Resources.cancel;
             this.btCancel.Location = new System.Drawing.Point(182, 340);
@@ -194,6 +201,7 @@
             this.btCancel.Size = new System.Drawing.Size(82, 78);
             this.btCancel.TabIndex = 12;
             this.btCancel.Text = "ยกเลิก";
+            this.btCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btCancel.UseVisualStyleBackColor = false;
             this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
@@ -201,6 +209,7 @@
             // btCal
             // 
             this.btCal.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btCal.Image = global::CShapeWinFormHomwork01.Properties.Resources.calculator2;
             this.btCal.Location = new System.Drawing.Point(49, 340);
@@ -208,6 +217,7 @@
             this.btCal.Size = new System.Drawing.Size(82, 78);
             this.btCal.TabIndex = 11;
             this.btCal.Text = "คำนวณ";
+            this.btCal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btCal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btCal.UseVisualStyleBackColor = false;
             this.btCal.Click += new System.EventHandler(this.btCal_Click);
@@ -233,17 +243,18 @@
             this.lbShowPay.AutoSize = true;
             this.lbShowPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbShowPay.ForeColor = System.Drawing.Color.Red;
-            this.lbShowPay.Location = new System.Drawing.Point(126, 271);
+            this.lbShowPay.Location = new System.Drawing.Point(128, 271);
             this.lbShowPay.Name = "lbShowPay";
             this.lbShowPay.Size = new System.Drawing.Size(55, 24);
             this.lbShowPay.TabIndex = 20;
             this.lbShowPay.Text = "XXX";
+            this.lbShowPay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbTotalCost
             // 
             this.lbTotalCost.AutoSize = true;
             this.lbTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbTotalCost.Location = new System.Drawing.Point(94, 227);
+            this.lbTotalCost.Location = new System.Drawing.Point(105, 227);
             this.lbTotalCost.Name = "lbTotalCost";
             this.lbTotalCost.Size = new System.Drawing.Size(107, 15);
             this.lbTotalCost.TabIndex = 19;
@@ -254,40 +265,40 @@
             this.lbShowPeople.AutoSize = true;
             this.lbShowPeople.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbShowPeople.ForeColor = System.Drawing.Color.Red;
-            this.lbShowPeople.Location = new System.Drawing.Point(126, 178);
+            this.lbShowPeople.Location = new System.Drawing.Point(128, 180);
             this.lbShowPeople.Name = "lbShowPeople";
             this.lbShowPeople.Size = new System.Drawing.Size(55, 24);
             this.lbShowPeople.TabIndex = 18;
             this.lbShowPeople.Text = "XXX";
+            this.lbShowPeople.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbAmountPeople2
             // 
             this.lbAmountPeople2.AutoSize = true;
             this.lbAmountPeople2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbAmountPeople2.Location = new System.Drawing.Point(109, 140);
+            this.lbAmountPeople2.Location = new System.Drawing.Point(105, 139);
             this.lbAmountPeople2.Name = "lbAmountPeople2";
-            this.lbAmountPeople2.Size = new System.Drawing.Size(73, 15);
+            this.lbAmountPeople2.Size = new System.Drawing.Size(103, 15);
             this.lbAmountPeople2.TabIndex = 17;
-            this.lbAmountPeople2.Text = "จำนวนผู้เข้า";
+            this.lbAmountPeople2.Text = "จำนวนผู้เข้าอบรม";
             // 
             // lbShowTopic
             // 
-            this.lbShowTopic.AutoSize = true;
             this.lbShowTopic.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbShowTopic.ForeColor = System.Drawing.Color.Red;
-            this.lbShowTopic.Location = new System.Drawing.Point(126, 100);
+            this.lbShowTopic.Location = new System.Drawing.Point(128, 100);
             this.lbShowTopic.Name = "lbShowTopic";
             this.lbShowTopic.Size = new System.Drawing.Size(55, 24);
             this.lbShowTopic.TabIndex = 16;
             this.lbShowTopic.Text = "XXX";
-            this.lbShowTopic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbShowTopic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbShowTopic.Click += new System.EventHandler(this.lbShowTopic_Click);
             // 
             // lbTopic
             // 
             this.lbTopic.AutoSize = true;
             this.lbTopic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbTopic.Location = new System.Drawing.Point(109, 63);
+            this.lbTopic.Location = new System.Drawing.Point(114, 63);
             this.lbTopic.Name = "lbTopic";
             this.lbTopic.Size = new System.Drawing.Size(87, 15);
             this.lbTopic.TabIndex = 15;
@@ -304,25 +315,59 @@
             this.lbResultHead.TabIndex = 15;
             this.lbResultHead.Text = "สรุปข้อมูล";
             // 
-            // btBack
+            // bt2
             // 
-            this.btBack.Location = new System.Drawing.Point(751, 20);
-            this.btBack.Name = "btBack";
-            this.btBack.Size = new System.Drawing.Size(28, 23);
-            this.btBack.TabIndex = 20;
-            this.btBack.Text = "<";
-            this.btBack.UseVisualStyleBackColor = true;
-            this.btBack.Click += new System.EventHandler(this.btBack_Click);
+            this.bt2.Location = new System.Drawing.Point(692, 441);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(28, 23);
+            this.bt2.TabIndex = 30;
+            this.bt2.Text = "2";
+            this.bt2.UseVisualStyleBackColor = true;
+            this.bt2.Click += new System.EventHandler(this.bt2_Click);
+            // 
+            // bt1
+            // 
+            this.bt1.Location = new System.Drawing.Point(658, 441);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(28, 23);
+            this.bt1.TabIndex = 29;
+            this.bt1.Text = "1";
+            this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.bt1_Click);
+            // 
+            // bt3
+            // 
+            this.bt3.Location = new System.Drawing.Point(726, 441);
+            this.bt3.Name = "bt3";
+            this.bt3.Size = new System.Drawing.Size(28, 23);
+            this.bt3.TabIndex = 28;
+            this.bt3.Text = "3";
+            this.bt3.UseVisualStyleBackColor = true;
+            this.bt3.Click += new System.EventHandler(this.bt3_Click);
+            // 
+            // bt4
+            // 
+            this.bt4.Enabled = false;
+            this.bt4.Location = new System.Drawing.Point(760, 441);
+            this.bt4.Name = "bt4";
+            this.bt4.Size = new System.Drawing.Size(28, 23);
+            this.bt4.TabIndex = 27;
+            this.bt4.Text = "4";
+            this.bt4.UseVisualStyleBackColor = true;
+            this.bt4.Click += new System.EventHandler(this.bt4_Click);
             // 
             // FrmHomework4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 476);
-            this.Controls.Add(this.btBack);
+            this.Controls.Add(this.bt2);
             this.Controls.Add(this.gbResult);
+            this.Controls.Add(this.bt1);
             this.Controls.Add(this.btClose);
+            this.Controls.Add(this.bt3);
             this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.bt4);
             this.Controls.Add(this.btCal);
             this.Controls.Add(this.gbNote);
             this.Controls.Add(this.lbPeople);
@@ -370,6 +415,9 @@
         private System.Windows.Forms.Label lbAmountPeople2;
         private System.Windows.Forms.Label lbShowPay;
         private System.Windows.Forms.Label lbTotalCost;
-        private System.Windows.Forms.Button btBack;
+        private System.Windows.Forms.Button bt2;
+        private System.Windows.Forms.Button bt1;
+        private System.Windows.Forms.Button bt3;
+        private System.Windows.Forms.Button bt4;
     }
 }

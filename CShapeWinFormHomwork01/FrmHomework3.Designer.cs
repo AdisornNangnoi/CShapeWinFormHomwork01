@@ -38,8 +38,10 @@
             this.lbDivideby = new System.Windows.Forms.Label();
             this.lbShowResult = new System.Windows.Forms.Label();
             this.lbBaht = new System.Windows.Forms.Label();
-            this.btBack = new System.Windows.Forms.Button();
-            this.btNext = new System.Windows.Forms.Button();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.bt1 = new System.Windows.Forms.Button();
+            this.bt3 = new System.Windows.Forms.Button();
+            this.bt4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbHead
@@ -47,7 +49,7 @@
             this.lbHead.AutoSize = true;
             this.lbHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbHead.ForeColor = System.Drawing.Color.Blue;
-            this.lbHead.Location = new System.Drawing.Point(136, 9);
+            this.lbHead.Location = new System.Drawing.Point(131, 22);
             this.lbHead.Name = "lbHead";
             this.lbHead.Size = new System.Drawing.Size(335, 31);
             this.lbHead.TabIndex = 1;
@@ -55,6 +57,7 @@
             // 
             // tbAmountPeople
             // 
+            this.tbAmountPeople.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAmountPeople.Location = new System.Drawing.Point(256, 109);
             this.tbAmountPeople.Name = "tbAmountPeople";
             this.tbAmountPeople.Size = new System.Drawing.Size(186, 20);
@@ -73,6 +76,7 @@
             // 
             // tbAmountMoney
             // 
+            this.tbAmountMoney.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbAmountMoney.Location = new System.Drawing.Point(256, 71);
             this.tbAmountMoney.Name = "tbAmountMoney";
             this.tbAmountMoney.Size = new System.Drawing.Size(186, 20);
@@ -92,6 +96,7 @@
             // btClose
             // 
             this.btClose.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btClose.Image = global::CShapeWinFormHomwork01.Properties.Resources.exit3;
             this.btClose.Location = new System.Drawing.Point(305, 158);
@@ -99,6 +104,7 @@
             this.btClose.Size = new System.Drawing.Size(82, 78);
             this.btClose.TabIndex = 10;
             this.btClose.Text = "ปิดหน้าจอ";
+            this.btClose.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btClose.UseVisualStyleBackColor = false;
             this.btClose.Click += new System.EventHandler(this.btClose_Click);
@@ -106,6 +112,7 @@
             // btCal
             // 
             this.btCal.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btCal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btCal.Image = global::CShapeWinFormHomwork01.Properties.Resources.calculator2;
             this.btCal.Location = new System.Drawing.Point(184, 158);
@@ -113,6 +120,7 @@
             this.btCal.Size = new System.Drawing.Size(82, 78);
             this.btCal.TabIndex = 8;
             this.btCal.Text = "คำนวณ";
+            this.btCal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btCal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btCal.UseVisualStyleBackColor = false;
             this.btCal.Click += new System.EventHandler(this.btCal_Click);
@@ -121,7 +129,7 @@
             // 
             this.lbDivideby.AutoSize = true;
             this.lbDivideby.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbDivideby.Location = new System.Drawing.Point(92, 294);
+            this.lbDivideby.Location = new System.Drawing.Point(92, 295);
             this.lbDivideby.Name = "lbDivideby";
             this.lbDivideby.Size = new System.Drawing.Size(58, 15);
             this.lbDivideby.TabIndex = 11;
@@ -132,7 +140,7 @@
             this.lbShowResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.lbShowResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbShowResult.ForeColor = System.Drawing.Color.Red;
-            this.lbShowResult.Location = new System.Drawing.Point(195, 269);
+            this.lbShowResult.Location = new System.Drawing.Point(195, 270);
             this.lbShowResult.Name = "lbShowResult";
             this.lbShowResult.Size = new System.Drawing.Size(192, 58);
             this.lbShowResult.TabIndex = 12;
@@ -143,39 +151,62 @@
             // 
             this.lbBaht.AutoSize = true;
             this.lbBaht.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbBaht.Location = new System.Drawing.Point(444, 294);
+            this.lbBaht.Location = new System.Drawing.Point(444, 295);
             this.lbBaht.Name = "lbBaht";
             this.lbBaht.Size = new System.Drawing.Size(29, 15);
             this.lbBaht.TabIndex = 13;
             this.lbBaht.Text = "บาท";
             // 
-            // btBack
+            // bt2
             // 
-            this.btBack.Location = new System.Drawing.Point(522, 19);
-            this.btBack.Name = "btBack";
-            this.btBack.Size = new System.Drawing.Size(28, 23);
-            this.btBack.TabIndex = 20;
-            this.btBack.Text = "<";
-            this.btBack.UseVisualStyleBackColor = true;
-            this.btBack.Click += new System.EventHandler(this.btBack_Click);
+            this.bt2.Location = new System.Drawing.Point(488, 410);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(28, 23);
+            this.bt2.TabIndex = 30;
+            this.bt2.Text = "2";
+            this.bt2.UseVisualStyleBackColor = true;
+            this.bt2.Click += new System.EventHandler(this.bt2_Click);
             // 
-            // btNext
+            // bt1
             // 
-            this.btNext.Location = new System.Drawing.Point(556, 19);
-            this.btNext.Name = "btNext";
-            this.btNext.Size = new System.Drawing.Size(28, 23);
-            this.btNext.TabIndex = 19;
-            this.btNext.Text = ">";
-            this.btNext.UseVisualStyleBackColor = true;
-            this.btNext.Click += new System.EventHandler(this.btNext_Click);
+            this.bt1.Location = new System.Drawing.Point(454, 410);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(28, 23);
+            this.bt1.TabIndex = 29;
+            this.bt1.Text = "1";
+            this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.bt1_Click);
+            // 
+            // bt3
+            // 
+            this.bt3.Enabled = false;
+            this.bt3.Location = new System.Drawing.Point(522, 410);
+            this.bt3.Name = "bt3";
+            this.bt3.Size = new System.Drawing.Size(28, 23);
+            this.bt3.TabIndex = 28;
+            this.bt3.Text = "3";
+            this.bt3.UseVisualStyleBackColor = true;
+            this.bt3.Click += new System.EventHandler(this.bt3_Click);
+            // 
+            // bt4
+            // 
+            this.bt4.Location = new System.Drawing.Point(556, 410);
+            this.bt4.Name = "bt4";
+            this.bt4.Size = new System.Drawing.Size(28, 23);
+            this.bt4.TabIndex = 27;
+            this.bt4.Text = "4";
+            this.bt4.UseVisualStyleBackColor = true;
+            this.bt4.Click += new System.EventHandler(this.bt4_Click);
             // 
             // FrmHomework3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(596, 445);
-            this.Controls.Add(this.btBack);
-            this.Controls.Add(this.btNext);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.bt1);
+            this.Controls.Add(this.bt3);
+            this.Controls.Add(this.bt4);
             this.Controls.Add(this.lbBaht);
             this.Controls.Add(this.lbShowResult);
             this.Controls.Add(this.lbDivideby);
@@ -208,7 +239,9 @@
         private System.Windows.Forms.Label lbDivideby;
         private System.Windows.Forms.Label lbShowResult;
         private System.Windows.Forms.Label lbBaht;
-        private System.Windows.Forms.Button btBack;
-        private System.Windows.Forms.Button btNext;
+        private System.Windows.Forms.Button bt2;
+        private System.Windows.Forms.Button bt1;
+        private System.Windows.Forms.Button bt3;
+        private System.Windows.Forms.Button bt4;
     }
 }

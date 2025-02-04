@@ -28,20 +28,7 @@ namespace CShapeWinFormHomwork01
                 Application.Exit();
             }
         }
-        //btNext====================================================
-        private void btNext_Click(object sender, EventArgs e)
-        {
-            FrmHomework3 frmHomework3 = new FrmHomework3();
-            frmHomework3.Show();
-            Hide();
-        }
-        //btBack====================================================
-        private void btBack_Click(object sender, EventArgs e)
-        {
-            FrmHomework1 frmHomework1 = new FrmHomework1();
-            frmHomework1.Show();
-            Hide();
-        }
+        
         //btCal====================================================
         private void btCal_Click(object sender, EventArgs e)
         {
@@ -71,24 +58,30 @@ namespace CShapeWinFormHomwork01
             }
             else
             {
-                lbShowID.Text = tbStuID.Text.Trim();
-                lbShowFullname.Text = tbFullname.Text.Trim();
                 int totalPoint = Convert.ToInt32(tbMidterm.Text.Trim()) +
                     Convert.ToInt32(tbFinal.Text.Trim()) + 
                     Convert.ToInt32(tbCollect.Text.Trim());
-                lbShowPoint.Text = totalPoint.ToString("0");
                 string grade;
-                if (totalPoint >= 80)
-                    grade = "A";
-                else if (totalPoint >= 70)
-                    grade = "B";
-                else if (totalPoint >= 60)
-                    grade = "C";
-                else if (totalPoint >= 50)
-                    grade = "D";
+                if (totalPoint > 100)
+                    ShareData.showWarningMSG("คะแนนรวมต้องไม่เกิน100คะแนน!!!");
                 else
-                    grade = "F";
-                lbShowGrade.Text = grade;
+                {
+                    if (totalPoint >= 80)
+                        grade = "A";
+                    else if (totalPoint >= 70)
+                        grade = "B";
+                    else if (totalPoint >= 60)
+                        grade = "C";
+                    else if (totalPoint >= 50)
+                        grade = "D";
+                    else
+                        grade = "F";
+                    lbShowGrade.Text = grade;
+                    lbShowID.Text = tbStuID.Text.Trim();
+                    lbShowFullname.Text = tbFullname.Text.Trim();
+                    lbShowPoint.Text = totalPoint.ToString("0");
+                }
+                
             }
         }
         //btCancel=================================================
@@ -135,6 +128,33 @@ namespace CShapeWinFormHomwork01
             {
                 e.Handled = true; // ป้องกันไม่ให้ป้อนอักขระที่ไม่ใช่ตัวเลข
             }
+        }
+        private void bt1_Click(object sender, EventArgs e)
+        {
+            FrmHomework1 frmHomework1 = new FrmHomework1();
+            frmHomework1.Show();
+            Hide();
+        }
+
+        private void bt2_Click(object sender, EventArgs e)
+        {
+            FrmHomework2 frmHomework2 = new FrmHomework2();
+            frmHomework2.Show();
+            Hide();
+        }
+
+        private void bt3_Click(object sender, EventArgs e)
+        {
+            FrmHomework3 frmHomework3 = new FrmHomework3();
+            frmHomework3.Show();
+            Hide();
+        }
+
+        private void bt4_Click(object sender, EventArgs e)
+        {
+            FrmHomework4 frmHomework4 = new FrmHomework4();
+            frmHomework4.Show();
+            Hide();
         }
     }
 }

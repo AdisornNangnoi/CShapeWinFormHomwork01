@@ -21,6 +21,33 @@ namespace CShapeWinFormHomwork01
         {
 
         }
+        private void bt1_Click(object sender, EventArgs e)
+        {
+            FrmHomework1 frmHomework1 = new FrmHomework1();
+            frmHomework1.Show();
+            Hide();
+        }
+
+        private void bt2_Click(object sender, EventArgs e)
+        {
+            FrmHomework2 frmHomework2 = new FrmHomework2();
+            frmHomework2.Show();
+            Hide();
+        }
+
+        private void bt3_Click(object sender, EventArgs e)
+        {
+            FrmHomework3 frmHomework3 = new FrmHomework3();
+            frmHomework3.Show();
+            Hide();
+        }
+
+        private void bt4_Click(object sender, EventArgs e)
+        {
+            FrmHomework4 frmHomework4 = new FrmHomework4();
+            frmHomework4.Show();
+            Hide();
+        }
 
         private void btBack_Click(object sender, EventArgs e)
         {

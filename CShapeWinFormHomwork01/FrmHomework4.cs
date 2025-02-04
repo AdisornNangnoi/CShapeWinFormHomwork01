@@ -16,11 +16,31 @@ namespace CShapeWinFormHomwork01
         {
             InitializeComponent();
         }
-        //btBack
-        private void btBack_Click(object sender, EventArgs e)
+        private void bt1_Click(object sender, EventArgs e)
+        {
+            FrmHomework1 frmHomework1 = new FrmHomework1();
+            frmHomework1.Show();
+            Hide();
+        }
+
+        private void bt2_Click(object sender, EventArgs e)
+        {
+            FrmHomework2 frmHomework2 = new FrmHomework2();
+            frmHomework2.Show();
+            Hide();
+        }
+
+        private void bt3_Click(object sender, EventArgs e)
         {
             FrmHomework3 frmHomework3 = new FrmHomework3();
             frmHomework3.Show();
+            Hide();
+        }
+
+        private void bt4_Click(object sender, EventArgs e)
+        {
+            FrmHomework4 frmHomework4 = new FrmHomework4();
+            frmHomework4.Show();
             Hide();
         }
         //tbAmountPeople
@@ -41,40 +61,7 @@ namespace CShapeWinFormHomwork01
                 ShareData.showWarningMSG("ป้อนจำนวนคนด้วย");
             }
             else
-            {   
-                
-                /*
-                int people = Convert.ToInt32(tbAmountPeople.Text.Trim());
-                if (rdJAVA.Checked == true)
-                {
-                    lbShowTopic.Text = "JAVA Developer";
-                    if (people >= 2 && amountPeople <= 4)
-                    {
-                        discount = totalPrice * 0.05; // ลด 5%
-                    }
-                    
-                    lbShowPay.Text = totalPay.ToString("0.00");
-                }
-                else if (rdAndroid.Checked == true)
-                {
-                    lbShowTopic.Text = "Android Developer";
-                    double totalPay = 1200 * people;
-                    lbShowPay.Text = totalPay.ToString("0.00");
-                }
-                else if (rdiOS.Checked == true)
-                {
-                    lbShowTopic.Text = "iOS Developer";
-                    double totalPay = 1400 * people;
-                    lbShowPay.Text = totalPay.ToString("0.00");
-                }
-                else
-                {
-                    lbShowTopic.Text = "iOS Developer";
-                    double totalPay = 1600 * people;
-                    lbShowPay.Text = totalPay.ToString("0.00");
-                }
-                lbShowPeople.Text = tbAmountPeople.ToString();
-                */
+            {
                 int people = Convert.ToInt32(tbAmountPeople.Text.Trim());
                 double pricePerPerson = 0;
                 double totalPrice = 0;
